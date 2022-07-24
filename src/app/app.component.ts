@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ItemMap } from './item-map.service';
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'minecraft-randomizer-tools';
+
+  map: any;
+  
+  constructor(public Map: ItemMap) {
+    this.map = Map.map;
+    // console.log('text is',this.txt);
+    
+
+  }
+
+  
 }
