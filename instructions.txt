@@ -1,0 +1,19 @@
+Minecraft Randomizer v2.5j created by Fasguy
+
+Your Seed: 1658699457335
+
+
+How to use:
+
+This generated file is for Minecraft Java 1.19.X
+https://fasguy.net/minecraft_randomizer
+
+=== LOOT TABLES ===
+1. Go into your '.minecraft' directory. (Check https://help.mojang.com/customer/portal/articles/1480874 for help)
+2. Go into 'saves' and then into the world's folder, where you want the drops to be randomized.
+3. Go into 'datapacks' and place the generated .zip file in this folder.
+4. Load the world in Minecraft and go nuts!
+
+=== FAQ ===
+Q: Does this work on servers?
+A: Yes. Do the same steps as above, but with your server's world instead.
