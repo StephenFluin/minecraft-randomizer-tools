@@ -5,10 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class ItemMap {
   public map: any;
+
+  /* Defaults */
+  public seed = 1658699457335;
   public critical_list = ['bastion_treasure', 'blaze', 'enderman'];
+  
   constructor() {
     this.initialize();
   }
+  
   initialize(source: string = this.txt) {
     let list = Array.from(source.matchAll(/(\w*) drops from (.*)/g)).map(x => x.splice(1));
     console.log('list is', list);
