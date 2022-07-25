@@ -1,14 +1,34 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ItemMap {
   public map: any;
 
   /* Defaults */
   public seed = 1658699457335;
-  public critical_list = ['bastion_treasure', 'blaze', 'enderman'];
+  public critical_list = [
+    'bastion_treasure',
+    'blaze',
+    'enderman',
+    'stronghold_library',
+    'lava_cauldron',
+    'end_city_treasure',
+    'diamond_ore',
+    'diamond_block',
+    'torch',
+    'netherite_block',
+    'emerald_ore',
+    'emerald_block',
+  ];
+  public secondary_list = [''];
+
+  public alternative_map = {
+    cauldron: ['lava_cauldron', 'iron'],
+    dark_oak_wood: ['dark_oak_log'],
+    netherite_block: [],
+  };
 
   constructor() {
     if (localStorage['sourceText']) {
@@ -21,7 +41,9 @@ export class ItemMap {
   initialize(source: string = this.txt) {
     this.txt = source;
     localStorage['sourceText'] = source;
-    let list = Array.from(source.matchAll(/(\w*) drops from (.*)/g)).map(x => x.splice(1));
+    let list = Array.from(source.matchAll(/(\w*) drops from (.*)/g)).map((x) =>
+      x.splice(1)
+    );
     // console.log('list is', list);
     this.map = {};
     for (let i = 0; i < list.length; i++) {
@@ -1039,5 +1061,4 @@ export class ItemMap {
   weaponsmith_gift drops from crimson_pressure_plate
   piglin_bartering drops from iron_golem
   `;
-
 }

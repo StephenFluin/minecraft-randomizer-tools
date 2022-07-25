@@ -5,16 +5,17 @@ import { routes } from './routes';
 import { AppComponent } from './app.component';
 import { ExpandableItem } from './expandable-item';
 import { RouterModule } from '@angular/router';
-import { CheatSheetComponent } from './cheat-sheet/cheat-sheet.component';
-import { HomeComponent } from './home/home.component';
+import { CheatSheetComponent } from './cheat-sheet.component';
+import { HomeComponent } from './home.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { NavComponent } from './nav/nav.component';
+import { NavComponent } from './nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { RememberComponent } from './remember.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     ExpandableItem,
     CheatSheetComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    RememberComponent,
   ],
   imports: [
     BrowserModule,

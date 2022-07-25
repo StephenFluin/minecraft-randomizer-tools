@@ -10,7 +10,8 @@
           "style": "scss",
           "inlineTemplate": true,
           "inlineStyle": true,
-          "skipTests": true
+          "skipTests": true,
+          "flat": true,
         }
       },
       "root": "",
@@ -110,6 +111,7 @@
     }
   },
   "cli": {
-    "analytics": "b1835346-add6-44ff-a9a8-a8a9ec27ce9d"
+    "analytics": "b1835346-add6-44ff-a9a8-a8a9ec27ce9d",
+    "packageManager": "yarn"
   }
 }

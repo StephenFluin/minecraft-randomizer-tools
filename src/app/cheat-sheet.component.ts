@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemMap } from '../item-map.service';
+import { ItemMap } from './item-map.service';
 
 @Component({
   selector: 'app-cheat-sheet',

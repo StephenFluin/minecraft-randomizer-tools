@@ -13,8 +13,10 @@ import { map, shareReplay } from 'rxjs/operators';
           [opened]="(isHandset$ | async) === false">
         <mat-toolbar>Menu</mat-toolbar>
         <mat-nav-list>
-<div><a routerLink="/">Home</a></div>
-<div><a routerLink="/cheatsheet">Switch Seed</a></div>
+          <div><a routerLink="/">Home</a></div>
+          <div><a routerLink="/cheatsheet">Switch Seed</a></div>
+          <div><a routerLink="/remember">Remember</a></div>
+          
         </mat-nav-list>
       </mat-sidenav>
       <mat-sidenav-content>
