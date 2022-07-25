@@ -9,14 +9,20 @@ export class ItemMap {
   /* Defaults */
   public seed = 1658699457335;
   public critical_list = ['bastion_treasure', 'blaze', 'enderman'];
-  
+
   constructor() {
-    this.initialize();
+    if (localStorage['sourceText']) {
+      this.initialize(localStorage['sourceText']);
+    } else {
+      this.initialize();
+    }
   }
-  
+
   initialize(source: string = this.txt) {
+    this.txt = source;
+    localStorage['sourceText'] = source;
     let list = Array.from(source.matchAll(/(\w*) drops from (.*)/g)).map(x => x.splice(1));
-    console.log('list is', list);
+    // console.log('list is', list);
     this.map = {};
     for (let i = 0; i < list.length; i++) {
       this.map[list[i][0]] = list[i][1];

@@ -13,8 +13,8 @@ import { map, shareReplay } from 'rxjs/operators';
           [opened]="(isHandset$ | async) === false">
         <mat-toolbar>Menu</mat-toolbar>
         <mat-nav-list>
-<div><a href="/">Home</a></div>
-<div><a href="/cheatsheet">Switch Seed</a></div>
+<div><a routerLink="/">Home</a></div>
+<div><a routerLink="/cheatsheet">Switch Seed</a></div>
         </mat-nav-list>
       </mat-sidenav>
       <mat-sidenav-content>
@@ -27,7 +27,7 @@ import { map, shareReplay } from 'rxjs/operators';
             *ngIf="isHandset$ | async">
             <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
           </button>
-          <span>Minecraft Randomizer Tools</span>
+          <span><a routerLink="/" style="color:white;text-decoration:none;">Minecraft Randomizer Tools</a></span>
         </mat-toolbar>
         <div id="page"><ng-content></ng-content></div>
       </mat-sidenav-content>
