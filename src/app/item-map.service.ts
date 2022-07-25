@@ -21,6 +21,7 @@ export class ItemMap {
     'netherite_block',
     'emerald_ore',
     'emerald_block',
+    'shulker',
   ];
   public secondary_list = [''];
 
