@@ -1,13 +1,15 @@
-# MinecraftRandomizerTools
+# Minecraft Randomizer Tools
 
 ## What is this?
 A set of tools to play and have fun with Minecraft Randomziers.
 
-[https://fasguy.net/minecraft_randomizer/](https://fasguy.net/minecraft_randomizer/)
+* [Random Datapack Generator](https://fasguy.net/minecraft_randomizer/)
+* [Minecraft Randomizer Tools Demo](https://randomizer.fluin.io)
+
 
 The goal is to make it easier to remember / find loot tables and chains.
 
-Two modes, search mode and remember mode.
+Two modes, search mode and remember mode (TODO).
 
 ## Search Mode 
 -> Help you find the most important things.
