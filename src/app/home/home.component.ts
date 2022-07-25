@@ -6,7 +6,8 @@ import { ItemMap } from '../item-map.service';
   template: `
     
 
-<div *ngFor="let item of Map.critical_list"><expandable-item [item]="item"></expandable-item></div>
+<div *ngFor="let item of Map.critical_list" style="margin-bottom:16px;">
+  <expandable-item [item]="item"></expandable-item></div>
 
   `,
   styles: [

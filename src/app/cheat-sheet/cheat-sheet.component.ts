@@ -12,6 +12,7 @@ import { ItemMap } from '../item-map.service';
   <div>
       <button mat-raised-button color="primary" (click)="update(area.value)">Update</button>
 </div>
+<p>To get this text, unzip your datapack and copy and paste the contents of the cheatsheet.txt file.</p>
   `,
   styles: [
   ]
