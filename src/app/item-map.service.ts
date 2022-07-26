@@ -22,6 +22,11 @@ export class ItemMap {
     'emerald_ore',
     'emerald_block',
     'shulker',
+    'pillager_outpost',
+    'abandoned_mineshaft',
+    'bastion_other',
+    'stronghold_corridor',
+    'stronghold_crossing',
   ];
   public secondary_list = [''];
 
